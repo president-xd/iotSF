@@ -105,4 +105,4 @@ jobs:
           files: iotSF
           generate_release_notes: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PATT }}
