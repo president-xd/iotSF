@@ -1,0 +1,1 @@
+/usr/bin/c++ -flto=auto -fno-fat-lto-objects  -Wl,--gc-sections -Wl,--dependency-file=CMakeFiles/iotSF.dir/link.d CMakeFiles/iotSF.dir/src/main.cpp.o -o iotSF
