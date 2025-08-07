@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(nids)
+project(iotSF)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -25,4 +25,4 @@ add_compile_options(-ffunction-sections -fdata-sections)
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--gc-sections")
 
 # Output
-add_executable(nids ${SOURCES})
+add_executable(iotSF ${SOURCES})
