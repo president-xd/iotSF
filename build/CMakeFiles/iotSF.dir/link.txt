@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/iotSF.dir/src/main.cpp.o CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o -o iotSF  -lusb-1.0 
+/usr/bin/c++ CMakeFiles/iotSF.dir/src/main.cpp.o CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o -o iotSF  -lusb-1.0 

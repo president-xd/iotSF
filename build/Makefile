@@ -153,29 +153,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/wifi/usb/usb_detector.o: src/wifi/usb/usb_detector.cpp.o
-.PHONY : src/wifi/usb/usb_detector.o
+src/wifi/usb/info_extractor.o: src/wifi/usb/info_extractor.cpp.o
+.PHONY : src/wifi/usb/info_extractor.o
 
 # target to build an object file
-src/wifi/usb/usb_detector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o
-.PHONY : src/wifi/usb/usb_detector.cpp.o
+src/wifi/usb/info_extractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o
+.PHONY : src/wifi/usb/info_extractor.cpp.o
 
-src/wifi/usb/usb_detector.i: src/wifi/usb/usb_detector.cpp.i
-.PHONY : src/wifi/usb/usb_detector.i
+src/wifi/usb/info_extractor.i: src/wifi/usb/info_extractor.cpp.i
+.PHONY : src/wifi/usb/info_extractor.i
 
 # target to preprocess a source file
-src/wifi/usb/usb_detector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.i
-.PHONY : src/wifi/usb/usb_detector.cpp.i
+src/wifi/usb/info_extractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.i
+.PHONY : src/wifi/usb/info_extractor.cpp.i
 
-src/wifi/usb/usb_detector.s: src/wifi/usb/usb_detector.cpp.s
-.PHONY : src/wifi/usb/usb_detector.s
+src/wifi/usb/info_extractor.s: src/wifi/usb/info_extractor.cpp.s
+.PHONY : src/wifi/usb/info_extractor.s
 
 # target to generate assembly for a file
-src/wifi/usb/usb_detector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.s
-.PHONY : src/wifi/usb/usb_detector.cpp.s
+src/wifi/usb/info_extractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.s
+.PHONY : src/wifi/usb/info_extractor.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/wifi/usb/usb_detector.o"
-	@echo "... src/wifi/usb/usb_detector.i"
-	@echo "... src/wifi/usb/usb_detector.s"
+	@echo "... src/wifi/usb/info_extractor.o"
+	@echo "... src/wifi/usb/info_extractor.i"
+	@echo "... src/wifi/usb/info_extractor.s"
 .PHONY : help
 
 

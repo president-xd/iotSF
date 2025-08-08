@@ -83,30 +83,30 @@ CMakeFiles/iotSF.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/iotSF.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/president/iotSF/src/main.cpp -o CMakeFiles/iotSF.dir/src/main.cpp.s
 
-CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o: CMakeFiles/iotSF.dir/flags.make
-CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o: /home/president/iotSF/src/wifi/usb/usb_detector.cpp
-CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o: CMakeFiles/iotSF.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/president/iotSF/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o -MF CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o.d -o CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o -c /home/president/iotSF/src/wifi/usb/usb_detector.cpp
+CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o: CMakeFiles/iotSF.dir/flags.make
+CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o: /home/president/iotSF/src/wifi/usb/info_extractor.cpp
+CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o: CMakeFiles/iotSF.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/president/iotSF/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o -MF CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o.d -o CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o -c /home/president/iotSF/src/wifi/usb/info_extractor.cpp
 
-CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/president/iotSF/src/wifi/usb/usb_detector.cpp > CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.i
+CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/president/iotSF/src/wifi/usb/info_extractor.cpp > CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.i
 
-CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/president/iotSF/src/wifi/usb/usb_detector.cpp -o CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.s
+CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/president/iotSF/src/wifi/usb/info_extractor.cpp -o CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.s
 
 # Object files for target iotSF
 iotSF_OBJECTS = \
 "CMakeFiles/iotSF.dir/src/main.cpp.o" \
-"CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o"
+"CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o"
 
 # External object files for target iotSF
 iotSF_EXTERNAL_OBJECTS =
 
 iotSF: CMakeFiles/iotSF.dir/src/main.cpp.o
-iotSF: CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o
+iotSF: CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o
 iotSF: CMakeFiles/iotSF.dir/build.make
 iotSF: CMakeFiles/iotSF.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/president/iotSF/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable iotSF"
