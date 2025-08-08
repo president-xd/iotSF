@@ -19,3 +19,4 @@ cmake ..
 make
 sudo make install
 
+sudo apt install wireless-tools
