@@ -4,25 +4,21 @@ project(iotSF)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Header location
-include_directories(include)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBUSB REQUIRED libusb-1.0)
 
-# This is for configuration files, but for now we will skip that thing
-# configure_file("${CMAKE_SOURCE_DIR}/config/interface.cfg" 
-#               "${CMAKE_BINARY_DIR}/config/interface.cfg" COPYONLY)
+include_directories(
+    include
+    ${LIBUSB_INCLUDE_DIRS}
+)
+link_directories(${LIBUSB_LIBRARY_DIRS})
 
-# Source files
-set(SOURCES
+add_executable(iotSF
     src/main.cpp
+    src/wifi/usb/usb_detector.cpp
 )
 
-# Compiler warnings
-add_compile_options(-Wall -Wextra -Wunused -Wunused-function -Wunused-variable)
-
-# Optional: Dead code elimination
-set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
-add_compile_options(-ffunction-sections -fdata-sections)
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--gc-sections")
-
-# Output
-add_executable(iotSF ${SOURCES})
+target_link_libraries(iotSF
+    ${LIBUSB_LIBRARIES}
+)
+target_compile_options(iotSF PRIVATE ${LIBUSB_CFLAGS_OTHER})
