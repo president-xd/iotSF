@@ -11,6 +11,7 @@
 
 using namespace wifi::usb;
 using namespace wifi::pci;
+using namespace wifi::wireless;
 
 static void print_usb_devices(const std::vector<USBDeviceInfo>& devs) {
     std::cout << "[USB Device] \n";
@@ -64,16 +65,42 @@ static void print_usb_devices(const std::vector<USBDeviceInfo>& devs) {
 //     std::cout << "\n  ]\n}\n";
 // }
 
+
+void print_wireless_info(InfoExtractor &extractor) {
+
+    auto interfaces = extractor.list_interfaces();
+    std::cout << "Wireless Interfaces:\n";
+    for (auto& iface : interfaces) {
+        auto info = extractor.get_info(iface);
+        std::cout << "---------------------------------\n";
+        std::cout << "Interface: " << info.interface_name << "\n";
+        std::cout << "MAC: " << info.mac_address << "\n";
+        std::cout << "Driver: " << info.driver << "\n";
+        std::cout << "Protocol: " << info.wireless_protocol << "\n";
+        std::cout << "Mode: " << info.mode << "\n";
+        std::cout << "Frequency: " << info.frequency_mhz << " MHz\n";
+        std::cout << "Channel: " << (int)info.channel << "\n";
+        std::cout << "Tx Power: " << info.tx_power_dbm << " dBm\n";
+        std::cout << "Signal: " << info.signal_level_dbm << " dBm\n";
+        std::cout << "Link Quality: " << info.link_quality << "\n";
+        std::cout << "Encryption: " << info.encryption << "\n";
+    }
+}
+
 int main(/*int argc, char** argv*/) {
     std::cout << "iotSF - Device discovery module\n\n";
 
     try {
-        USBDetector usb;
-        auto usb_devs = usb.discover();
-        std::cout << "### USB devices (" << usb_devs.size() << " found) ###\n";
-        print_usb_devices(usb_devs);
+        // USBDetector usb;
+        // auto usb_devs = usb.discover();
+        // std::cout << "### USB devices (" << usb_devs.size() << " found) ###\n";
+        // print_usb_devices(usb_devs);
 
-        std::cout << "\n";
+        // std::cout << "\n";
+
+        InfoExtractor extractor;
+        std::cout << "### Wireless Interfaces ###\n";
+        print_wireless_info(extractor);
 
         // PCIDetector pci;
         // auto pci_devs = pci.discover();
