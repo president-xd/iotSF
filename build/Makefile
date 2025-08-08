@@ -177,6 +177,30 @@ src/wifi/usb/info_extractor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.s
 .PHONY : src/wifi/usb/info_extractor.cpp.s
 
+src/wifi/wireless/info_extractor.o: src/wifi/wireless/info_extractor.cpp.o
+.PHONY : src/wifi/wireless/info_extractor.o
+
+# target to build an object file
+src/wifi/wireless/info_extractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/wireless/info_extractor.cpp.o
+.PHONY : src/wifi/wireless/info_extractor.cpp.o
+
+src/wifi/wireless/info_extractor.i: src/wifi/wireless/info_extractor.cpp.i
+.PHONY : src/wifi/wireless/info_extractor.i
+
+# target to preprocess a source file
+src/wifi/wireless/info_extractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/wireless/info_extractor.cpp.i
+.PHONY : src/wifi/wireless/info_extractor.cpp.i
+
+src/wifi/wireless/info_extractor.s: src/wifi/wireless/info_extractor.cpp.s
+.PHONY : src/wifi/wireless/info_extractor.s
+
+# target to generate assembly for a file
+src/wifi/wireless/info_extractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iotSF.dir/build.make CMakeFiles/iotSF.dir/src/wifi/wireless/info_extractor.cpp.s
+.PHONY : src/wifi/wireless/info_extractor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/wifi/usb/info_extractor.o"
 	@echo "... src/wifi/usb/info_extractor.i"
 	@echo "... src/wifi/usb/info_extractor.s"
+	@echo "... src/wifi/wireless/info_extractor.o"
+	@echo "... src/wifi/wireless/info_extractor.i"
+	@echo "... src/wifi/wireless/info_extractor.s"
 .PHONY : help
 
 

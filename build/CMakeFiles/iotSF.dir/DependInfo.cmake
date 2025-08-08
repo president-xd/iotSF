@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/president/iotSF/src/main.cpp" "CMakeFiles/iotSF.dir/src/main.cpp.o" "gcc" "CMakeFiles/iotSF.dir/src/main.cpp.o.d"
   "/home/president/iotSF/src/wifi/usb/info_extractor.cpp" "CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o" "gcc" "CMakeFiles/iotSF.dir/src/wifi/usb/info_extractor.cpp.o.d"
+  "/home/president/iotSF/src/wifi/wireless/info_extractor.cpp" "CMakeFiles/iotSF.dir/src/wifi/wireless/info_extractor.cpp.o" "gcc" "CMakeFiles/iotSF.dir/src/wifi/wireless/info_extractor.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
