@@ -16,13 +16,13 @@ std::vector<USBDeviceInfo> USBDetector::discover() {
     std::vector<USBDeviceInfo> out;
     libusb_context* ctx = nullptr;
     libusb_device** list = nullptr;
-    ssize_t cnt = 0;
 
     if (libusb_init(&ctx) < 0) {
         std::cerr << "[USB] libusb init failed\n";
         return out;
     }
-    cnt = libusb_get_device_list(ctx, &list);
+
+    ssize_t cnt = libusb_get_device_list(ctx, &list);
     if (cnt < 0) {
         std::cerr << "[USB] get device list failed\n";
         libusb_exit(ctx);
@@ -34,15 +34,20 @@ std::vector<USBDeviceInfo> USBDetector::discover() {
         libusb_device_descriptor desc;
         if (libusb_get_device_descriptor(dev, &desc) != 0) continue;
 
-        USBDeviceInfo info;
-        info.vendor_id = desc.idVendor;
-        info.product_id = desc.idProduct;
+        USBDeviceInfo info{};
+        info.vendor_id       = desc.idVendor;
+        info.product_id      = desc.idProduct;
+        info.device_class    = desc.bDeviceClass;
+        info.device_subclass = desc.bDeviceSubClass;
+        info.device_protocol = desc.bDeviceProtocol;
+        info.bus_number      = libusb_get_bus_number(dev);
+        info.device_address  = libusb_get_device_address(dev);
 
         libusb_device_handle* handle = nullptr;
         if (libusb_open(dev, &handle) == 0) {
             info.manufacturer = safe_get_string(handle, desc.iManufacturer);
-            info.product = safe_get_string(handle, desc.iProduct);
-            info.serial = safe_get_string(handle, desc.iSerialNumber);
+            info.product      = safe_get_string(handle, desc.iProduct);
+            info.serial       = safe_get_string(handle, desc.iSerialNumber);
             libusb_close(handle);
         }
 
