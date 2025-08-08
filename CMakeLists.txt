@@ -15,7 +15,7 @@ link_directories(${LIBUSB_LIBRARY_DIRS})
 
 add_executable(iotSF
     src/main.cpp
-    src/wifi/usb/usb_detector.cpp
+    src/wifi/usb/info_extractor.cpp
 )
 
 target_link_libraries(iotSF
