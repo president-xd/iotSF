@@ -8,6 +8,7 @@
 #include <iomanip>
 #include "wifi/usb/info_extractor.h"
 #include "wifi/pci/pci_detector.h"
+#include "wifi/wireless/info_extractor.h"
 
 using namespace wifi::usb;
 using namespace wifi::pci;
