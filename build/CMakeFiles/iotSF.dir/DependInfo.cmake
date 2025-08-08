@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/iotSF/src/main.cpp" "CMakeFiles/iotSF.dir/src/main.cpp.o" "gcc" "CMakeFiles/iotSF.dir/src/main.cpp.o.d"
-  "" "iotSF" "gcc" "CMakeFiles/iotSF.dir/link.d"
+  "/home/president/iotSF/src/main.cpp" "CMakeFiles/iotSF.dir/src/main.cpp.o" "gcc" "CMakeFiles/iotSF.dir/src/main.cpp.o.d"
+  "/home/president/iotSF/src/wifi/usb/usb_detector.cpp" "CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o" "gcc" "CMakeFiles/iotSF.dir/src/wifi/usb/usb_detector.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

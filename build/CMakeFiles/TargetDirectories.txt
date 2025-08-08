@@ -1,3 +1,3 @@
-/home/kali/iotSF/build/CMakeFiles/iotSF.dir
-/home/kali/iotSF/build/CMakeFiles/edit_cache.dir
-/home/kali/iotSF/build/CMakeFiles/rebuild_cache.dir
+/home/president/iotSF/build/CMakeFiles/iotSF.dir
+/home/president/iotSF/build/CMakeFiles/edit_cache.dir
+/home/president/iotSF/build/CMakeFiles/rebuild_cache.dir
