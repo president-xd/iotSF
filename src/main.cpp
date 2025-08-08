@@ -14,9 +14,10 @@ using namespace wifi::pci;
 
 static void print_usb_devices(const std::vector<USBDeviceInfo>& devs) {
     std::cout << "[USB Device] \n";
+    std::cout << "----------------------------------------" << std::endl;
     bool first = true;
     for (const auto &d : devs) {
-        if (!first) std::cout << ",\n";
+        if (!first) std::cout << "\n";
         first = false;
         // std::cout << "    {\n"
         //           << "      \"vendor_id\": \"" << std::hex << std::setw(4) << std::setfill('0') << d.vendor_id << std::dec << "\",\n"
