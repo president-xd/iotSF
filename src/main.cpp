@@ -43,7 +43,7 @@ static void print_usb_devices(const std::vector<USBDeviceInfo>& devs) {
         std::cout << "Device Address: " << static_cast<int>(d.device_address) << std::endl;
         std::cout << "----------------------------------------" << std::endl;
     }
-    std::cout << "\n  ]\n}\n";
+    std::cout << "Total USB devices found: " << devs.size() << std::endl;
 }
 
 // static void print_pci_devices(const std::vector<PCIDeviceInfo>& devs) {
