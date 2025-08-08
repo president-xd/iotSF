@@ -6,7 +6,7 @@
 #include <sstream>
 #include <iterator>
 #include <iomanip>
-#include "wifi/usb/usb_detector.h"
+#include "wifi/usb/info_extractor.h"
 #include "wifi/pci/pci_detector.h"
 
 using namespace wifi::usb;
